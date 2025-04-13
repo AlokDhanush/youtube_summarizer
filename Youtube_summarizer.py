@@ -17,7 +17,10 @@ def summarize_long_text(text):
 
 
 transcript = get_transcript('https://www.youtube.com/watch?v=AUozVp78dhk')
-summary = summarize_long_text(transcript) 
-print("Summary:\n", summary)
-print("\n")
+if transcript == "":
+    print("The video may not have transcript or the link is not correct")
 
+else:
+    summary = summarize_long_text(transcript) 
+    print("Summary:\n", summary)
+    print("\n")
