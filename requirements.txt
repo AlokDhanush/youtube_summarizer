@@ -1,1 +1,2 @@
 transformers
+youtube_transcript_api
